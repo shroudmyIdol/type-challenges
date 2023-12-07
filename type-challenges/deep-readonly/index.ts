@@ -7,3 +7,4 @@ type DeepReadonly<T> = T extends Object
         readonly [P in keyof T]: DeepReadonly<T[P]>;
       }
   : T;
+
